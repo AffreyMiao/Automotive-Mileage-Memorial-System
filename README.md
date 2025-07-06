@@ -1,0 +1,2 @@
+# Automotive-Mileage-Memorial-System
+本项目旨在研发一套面向公众的网络工具，允许用户对其曾经使用或拥有的汽车进行数字化记录和永久性公开展示。
