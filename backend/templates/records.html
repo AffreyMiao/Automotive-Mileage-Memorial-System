@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>汽车记录列表</title>
+</head>
+<body>
+    <h1>已登记的汽车记录</h1>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>ID</th>
+            <th>品牌型号</th>
+            <th>购买日期</th>
+            <th>报废/转让日期</th>
+            <th>里程</th>
+            <th>备注</th>
+            <th>登记时间</th>
+        </tr>
+        {% for r in records %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[4] }} 公里</td>
+            <td>{{ r[5] }}</td>
+            <td>{{ r[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">返回登记表</a>
+</body>
+</html>
